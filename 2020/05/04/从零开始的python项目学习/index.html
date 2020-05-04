@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://github.wjcwqc.io">
   <title>从零开始的python项目学习 | Wjcwqc&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="缘由很久以前就想学python，也看了一点课程，学了点皮毛。但是要ac题目确实枯燥。用kaggle的方式去学了一点，也不行。确实就是没动力学下去。那么最近闲了就准备拾起以前的想法：搞个学校oj自动答题。 项目启动自己琢磨了几天就写了10行不到代码，确定了cookie的登录方式可行。过程中学到了requests的正确用法。然后从网上抄一份md5加密函数，实现了登录。做了一个手动kk交题最后是成功了。">
+  <meta name="description" content="缘由很久以前就想学python，也看了一点课程，学了点皮毛。但是要ac题目确实枯燥。用kaggle的方式去学了一点，也不行。确实就是没动力学下去。那么最近闲了就准备拾起以前的想法：搞个学校oj自动答题。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从零开始的python项目学习">
 <meta property="og:url" content="https://github.wjcwqc.io/2020/05/04/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84python%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Wjcwqc&#39;s Blog">
-<meta property="og:description" content="缘由很久以前就想学python，也看了一点课程，学了点皮毛。但是要ac题目确实枯燥。用kaggle的方式去学了一点，也不行。确实就是没动力学下去。那么最近闲了就准备拾起以前的想法：搞个学校oj自动答题。 项目启动自己琢磨了几天就写了10行不到代码，确定了cookie的登录方式可行。过程中学到了requests的正确用法。然后从网上抄一份md5加密函数，实现了登录。做了一个手动kk交题最后是成功了。">
+<meta property="og:description" content="缘由很久以前就想学python，也看了一点课程，学了点皮毛。但是要ac题目确实枯燥。用kaggle的方式去学了一点，也不行。确实就是没动力学下去。那么最近闲了就准备拾起以前的想法：搞个学校oj自动答题。">
 <meta property="og:locale" content="zh">
 <meta property="article:published_time" content="2020-05-04T09:26:42.722Z">
-<meta property="article:modified_time" content="2020-05-04T11:07:21.037Z">
+<meta property="article:modified_time" content="2020-05-04T11:35:04.984Z">
 <meta property="article:author" content="wjcwqc">
 <meta name="twitter:card" content="summary">
   
@@ -177,6 +177,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>很久以前就想学python，也看了一点课程，学了点皮毛。但是要ac题目确实枯燥。用kaggle的方式去学了一点，也不行。确实就是没动力学下去。那么最近闲了就准备拾起以前的想法：搞个<a href="https://acm.webturing.com" target="_blank" rel="noopener">学校oj</a>自动答题。</p>
+<a id="more"></a>
 <h1 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h1><p>自己琢磨了几天就写了10行不到代码，确定了cookie的登录方式可行。过程中学到了requests的正确用法。然后从网上抄一份md5加密函数，实现了登录。做了一个手动kk交题最后是成功了。到这也不过就50行不到的代码。印证了那句人生苦短，我用py。这是后呢，也和小伙伴一起商量起来了下一步的进程。具体过程可以参照我们的<a href="https://github.com/acmcracker/webturing" target="_blank" rel="noopener">acmcrack项目</a>。</p>
 <h1 id="学习过程"><a href="#学习过程" class="headerlink" title="学习过程"></a>学习过程</h1><p>有需求才会有产品，伟大的项目往往来源于程序员的需求。这类例子太多了，所以做一件自己喜欢的事才能更好的学习下去。<br>那么要做这个项目，py基础是要会一点的。剩下第一步搞定requests库的基本使用方法。为了交题完成最基本的post模块，可以很好的熟练requests。那么剩下登录签到都是小问题。为了处理登录状态检测，我又要去学习字符串处理，在某一特定页面去查找用户名，找一种方法去处理整个页面得到一个可靠的可以确认登录状态的返回值。这一过程可以锻炼自己的编程思维。我和同学商量了确定由他去用java写一个接口来呈现数据库中的题解。这一步就需要学会处理json，当然也不难。因为我之前写了一个小程序去调用过b站接口实现主播开播即刻打开直播间的功能，这之中也需要json操作。<br>那么下一步就是py处理文件和pymysql的学习。因为需要保存cookie，替换java源码中题号改为Main同是要自动化提交到数据库。还剩下做心跳，自动提交登陆者所有提交过的答案到数据库，前端界面……。  </p>
 <h1 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h1><p>我相信通过完成这个项目能帮助我学习py，数据库等等的知识。而且这个学习过程于我而言简单快乐。不会什么就去谷歌百度，会了就提高熟练度。<br>不仅如此，这个程序还有很好的预期。虽然我目前还没有能力完成它，但是可以明确的是，我知道完成它的方法，我知道我要去做什么才能完成它，在这个项目完成后我基本上可以独立的去使用py做我想做的其他项目，或者迭代这个项目。<br>而且每完成一个步骤都会有成就感，会更期待整体竣工。希望这篇水文可以帮助到你们或者送去一点点启发。</p>
